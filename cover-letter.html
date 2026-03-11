@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+        }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <title>Cover Letter - Xavier Bodus</title>
+</head>
+
+<body>
+    <!-- Desktop Bar Navigation -->
+    <aside id="navigation" class="desktop-nav">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo"></div>
+            </a>
+            <ul class="links-wrapper">
+                <li><a href="index.html" class="desktop-link">Home</a></li>
+                <li><a href="resume.html" class="desktop-link">Resume</a></li>
+                <li><a href="cover-letter.html" class="desktop-link active">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="desktop-link">Career Goals</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <!-- Mobile Slide Navigation -->
+    <nav id="mobile-navigation" class="mobile-nav">
+        <div class="nav-bar">
+            <a href="index.html" class="logo-link">
+                <div class="logo"></div>
+            </a>
+            <div id="mobile-navigation-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-drawer">
+            <ul class="mobile-links-wrapper">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li><a href="resume.html" class="mobile-link">Resume</a></li>
+                <li class="active"><a href="cover-letter.html" class="mobile-link active">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="mobile-link">Career Goals</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <div class="header-wrapper">
+                <h1>Cover Letter</h1>
+                <div id="date"></div>
+            </div>
+        </header>
+
+        <section id="cover-letter" class="section-wrapper">
+            <article class="letter-card">
+                <!-- Address Block -->
+                <div class="letter-address">
+                    <h2>Xavier Bodus</h2>
+                    <p>Cloud & Network Engineering Student</p>
+                    <p>Western Governors University — AWS Track</p>
+                    <p><a href="mailto:xbodus1@wgu.edu">xbodus1@wgu.edu</a></p>
+                </div>
+
+                <hr />
+
+                <!-- Greeting -->
+                <p><strong>To whom it may concern,</strong> <br /> <span><em>(and all who are interested)</em></span>
+                </p>
+
+                <!-- Body -->
+                <p>First off, thank you for taking the time to review my portfolio. I am a Cloud and Network Engineering
+                    student at Western Governors University, in the Amazon Web Services (AWS) track with a focus on
+                    becoming
+                    a cybersecurity professional. My passion lies in building secure, scalable systems and analyzing
+                    network
+                    threats.
+                </p>
+
+                <!-- My Story -->
+                <p>My story begins working in telecommunications as a sales associate. It was there I could be close to
+                    technology;
+                    getting people connected to the network, learning to troubleshoot, and as an added bonus, being
+                    close to people.
+                    It was peoples' stories that lead me down this path. More specifically, the stories connected to
+                    people
+                    unfortunately being scammed or being affected by cyber incidents. At the time, I had also been
+                    hearing about
+                    the need for cybersecurity professionals. To keep a long story short, I dove head first into to
+                    world of
+                    cybersecurity, first starting with a cybersecurity course on Coursera and learning to code on
+                    FreeCodeCamp.
+                    Three years later, I'm pursing my degree, honing my skills on Hack The Box, and building projects in
+                    Python I never
+                    thought I could ever build.
+                </p>
+                
+                <!-- Key Strengths Callout -->
+                <div class="letter-callout">
+                    <span class="section-comment">// key_strengths</span>
+                    <p><mark><strong>Web development (HTML, CSS, React, TypeScript, Python), automation scripting,
+                                security analysis, and hands-on experience with Docker-based lab
+                                environments.</strong></mark></p>
+                </div>
+
+                <p>Currently, I am developing a cybersecurity learning platform that combines educational content with
+                    interactive labs. The flagship feature is a SOC analyst simulation built with Docker, Elasticsearch,
+                    and a custom React SIEM dashboard. This project reflects my drive to merge development skills with
+                    security expertise.</p>
+
+                <p>I am eager to bring this blend of cloud engineering, web development, and security analysis to a team
+                    that values growth, curiosity, and hands-on problem-solving. I would welcome the opportunity to
+                    discuss how my skills can contribute to your organization.</p>
+
+                <!-- Closing -->
+                <hr />
+                <div class="letter-closing">
+                    <p>Thank you for your time,</p>
+                    <h3>Xavier Bodus</h3>
+                    <div class="signature-line"></div>
+                    <div class="signature-wrapper">
+                        <img src="static/Signature.svg" class="signature" title="Xavier Bodus Signature" />
+                    </div>
+                </div>
+            </article>
+
+            <!-- Meta Strip -->
+            <div class="meta-strip">
+                <div class="meta-block">
+                    <span class="section-comment">// status</span>
+                    <p><strong>OPEN TO WORK</strong></p>
+                </div>
+                <div class="meta-block">
+                    <span class="section-comment">// focus_area</span>
+                    <p><strong>Cybersecurity & Cloud Networking</strong></p>
+                </div>
+                <div class="meta-block">
+                    <span class="section-comment">// location</span>
+                    <p><strong>Remote / Covington, GA US</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <span class="footer-comment">// end_of_file</span>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-name">Xavier Bodus</p>
+                <p>Cloud &amp; Security Engineer</p>
+                <p>WGU — B.S. Cloud Computing</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="cover-letter.html">Cover Letter</a>
+                <a href="career-goals.html">Career Goals</a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Xavier Bodus. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

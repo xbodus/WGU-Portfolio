@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <script type="importmap">
+            {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+            }
+            }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <title>Career Goals - Xavier Bodus</title>
+    </head>
+
+    <body>
+        <!-- Desktop Bar Navigation -->
+        <aside id="navigation" class="desktop-nav">
+            <nav>
+                <a href="index.html" class="logo-link">
+                    <div class="logo"></div>
+                </a>
+                <ul class="links-wrapper">
+                    <li><a href="index.html" class="desktop-link">Home</a></li>
+                    <li><a href="resume.html" class="desktop-link">Resume</a></li>
+                    <li><a href="cover-letter.html" class="desktop-link">Cover Letter</a></li>
+                    <li><a href="career-goals.html" class="desktop-link active">Career Goals</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Mobile Slide Navigation -->
+        <nav id="mobile-navigation" class="mobile-nav">
+            <div class="nav-bar">
+                <a href="index.html" class="logo-link">
+                    <div class="logo"></div>
+                </a>
+                <div id="mobile-navigation-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="mobile-drawer">
+                <ul class="mobile-links-wrapper">
+                    <li><a href="index.html" class="mobile-link">Home</a></li>
+                    <li><a href="resume.html" class="mobile-link">Resume</a></li>
+                    <li><a href="cover-letter.html" class="mobile-link">Cover Letter</a></li>
+                    <li class="active"><a href="career-goals.html" class="mobile-link active">Career Goals</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <div class="header-wrapper">
+                    <h1>Career Goals</h1>
+                    <div id="date"></div>
+                </div>
+            </header>
+
+            <!-- Motion Graphic Video -->
+            <section class="section-wrapper">
+                <div class="video-card">
+                    <span class="section-comment">// career_goals_video</span>
+                    <div class="video-wrapper">
+                        <video autoplay muted loop>
+                            <source src="static/WGU-MotionGraphic.mov" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Career Goals Context -->
+            <section class="section-wrapper contact-section-wrapper">
+                <div class="contact-info-wrapper">
+                    <div>
+                        <span class="section-comment">// career_goals</span>
+                        <h3>Up From Here</h3>
+                        <p>Anyone who know me knows I'm always working on something. My goals is to work in cybersecurity.
+                            More
+                            specifically, as a network analyst, web/application penetration tester, or in application
+                            security developing
+                            secure APIs.
+                        </p>
+                        <p>I always like to tell myself if you don't know something, you better go find the answer. The
+                            mindset comes
+                            from one of my all time favorite characters, Rocky. And with that, I'll leave you with this
+                            quote.
+                        </p>
+                        <audio controls src="/static/Rocky_HowHardYouGetHitAndKeepMovingForward_Audio.mp3" title="Rock Balboa Audio"></audio>
+                    </div>
+                    <img src="static/XDesignLogo_v2-01.png" title="Xavier Bodus Logo" />
+                </div>
+
+                <!-- Contact Form -->
+                <div class="form-card">
+                    <span class="section-comment">// contact_form</span>
+                    <h2>Get In Touch</h2>
+                    <p>Interested in connecting? Drop a message below.</p>
+
+                    <form action="https://wp.zybooks.com/form-viewer.php">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name:</label>
+                                <input name="first-name" type="text" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name:</label>
+                                <input name="last-name" type="text" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company:</label>
+                                <input name="company" type="text" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input name="email" type="email" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-number">Phone Number:</label>
+                            <input name="phone-number" type="tel" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea name="message" rows="4" required></textarea>
+                        </div>
+                        <fieldset class="form-fieldset" name="contact-time">
+                            <legend>Best contact time:</legend>
+                            <div class="radio-group">
+                                <span>
+                                    <input id="am" name="contact-time" type="radio" value="am">
+                                    <label for="am">a.m.</label>
+                                </span>
+                                <span>
+                                    <input id="pm" name="contact-time" type="radio" value="pm">
+                                    <label for="pm">p.m.</label>
+                                </span>
+                                <span>
+                                    <input id="any" name="contact-time" type="radio" value="any">
+                                    <label for="any">anytime</label>
+                                </span>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            <label for="contact-method">Contact Method:</label>
+                            <select id="contact-method" name="contact-method">
+                                <option value="">-- Select Option --</option>
+                                <option value="phone">Phone</option>
+                                <option value="email">Email</option>
+                                <option value="text">Text</option>
+                                <option value="any">Any</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <span class="footer-comment">// end_of_file</span>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Xavier Bodus</p>
+                    <p>Cloud &amp; Security Engineer</p>
+                    <p>WGU — B.S. Cloud Computing</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="cover-letter.html">Cover Letter</a>
+                    <a href="career-goals.html">Career Goals</a>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2026 Xavier Bodus. All rights reserved.</p>
+        </footer>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
+
+
+<!-- ASSET CREDITS -->
+
+<!-- Rocky Balboa Audio -->
+ <!-- <a href="https://tuna.voicemod.net/sound/7b7a207c-005a-41b3-a10a-85816f225395" title="Rocky Balboa (2006) It's Ain't About How Hard You Hit MGM Studi - Meme Sound Effect Button for Soundboard">Audio created by eehbuddyguy - Voicemod Tuna</a> -->

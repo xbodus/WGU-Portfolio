@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+        }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <title>Resume - Xavier Bodus</title>
+</head>
+
+<body>
+    <!-- Desktop Bar Navigation -->
+    <aside id="navigation" class="desktop-nav">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo"></div>
+            </a>
+            <ul class="links-wrapper">
+                <li><a href="index.html" class="desktop-link">Home</a></li>
+                <li><a href="resume.html" class="desktop-link active">Resume</a></li>
+                <li><a href="cover-letter.html" class="desktop-link">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="desktop-link">Career Goals</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Mobile Slide Navigation -->
+    <nav id="mobile-navigation" class="mobile-nav">
+        <div class="nav-bar">
+            <a href="index.html" class="logo-link">
+                <div class="logo"></div>
+            </a>
+            <div id="mobile-navigation-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-drawer">
+            <ul class="mobile-links-wrapper">
+                <li><a href="index.html" class="mobile-link">Home</a></li>
+                <li class="active"><a href="resume.html" class="mobile-link active">Resume</a></li>
+                <li><a href="cover-letter.html" class="mobile-link">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="mobile-link">Career Goals</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <div class="header-wrapper">
+                <h1>Xavier Bodus Resume</h1>
+                <div id="date"></div>
+            </div>
+            <article class="profile-wrapper">
+                <h2>Profile</h2>
+
+                <div class="profile-content">
+                    <h3><span class="section-comment">// who_am_i</span><br />Who am I?<span class="profile-subtext">
+                            (For real this time)</span></h3>
+                    <p>I am a motivated Cloud and Network Engineering student in the Amazon Web Services (AWS) track at
+                        Western Governors University pursuing a career in cybersecurity as a network analyst. I am
+                        skilled in HTML, CSS, React, TypeScript, and Python with hands-on experience in web development,
+                        automation scripting, and security analysis.</p>
+                </div>
+
+                <div class="profile-content">
+                    <h3><span class="section-comment">// what_am_i_currently_working_on</span><br /> What am I currently
+                        working on?</h3>
+                    <p>Currently I am developing a cybersecurity learning platform featuring industry news, educational
+                        articles, curated resources, and interactive labs. The first lab—a SOC analyst simulation—uses a
+                        Docker-based environment with Nginx, Flask/MySQL, Filebeat, and Elasticsearch. Data from
+                        Elasticsearch is queried via Django and visualized on a custom React SIEM dashboard. Users
+                        analyze logs and IP reputation data through Python-based tools, completing the simulation with
+                        an assessment report. Passionate about leveraging technical expertise to grow as a network and
+                        security analyst.</p>
+                </div>
+            </article>
+        </header>
+
+        <hr />
+
+        <section id="skills-section" class="section-wrapper">
+            <!-- Skills Table -->
+            <h2>Skills & Proficencies</h2>
+            <table>
+                <caption>
+                    Skills as of 2026
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Experience (Years)</th>
+                        <th scope="col">Projects</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Linux</th>
+                        <td>2</td>
+                        <td>5</td>
+                        <td class="skill-star-rating">
+                            ★★★★☆
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Python</th>
+                        <td>3</td>
+                        <td>8</td>
+                        <td class="skill-star-rating">
+                            ★★★★☆
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">React</th>
+                        <td>3</td>
+                        <td>4</td>
+                        <td class="skill-star-rating">
+                            ★★★★☆
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Networking</th>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="skill-star-rating">
+                            ★★★☆☆
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Network Analyst</th>
+                        <td>1</td>
+                        <td>5</td>
+                        <td class="skill-star-rating">
+                            ★★★☆☆
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr />
+
+        <!-- Work Experience Section -->
+        <section id="work-experience" class="section-wrapper">
+            <h2>Work Experience</h2>
+            <div>
+                <h3 id="WGU-program"><strong>Full Time Student</strong><span class="experience-type"> - WGU - B.S.
+                        Degree</span></h3>
+                <p><em>Jan 2025 - current</em></p>
+                <article class="experience-wrapper">
+                    <p>Current progress: term 3 of 10. Focuses on designing, deploying, and managing cloud
+                        infrastructure using Amazon Web Services (AWS). Core topics include network architecture,
+                        security, and troubleshooting; cloud-native solutions using AWS compute, storage, networking,
+                        and IAM services; automation with AWS CLI, SDKs, and orchestration tools; hybrid cloud
+                        integration; and Python scripting for IT operations. Includes embedded industry certifications:
+                        AWS Cloud Practitioner, AWS Developer Associate, AWS Solutions Architect Associate, AWS SysOps
+                        Administrator Associate, CompTIA A+, Network+, Security+, Cloud+, LPI Linux Essentials, and ITIL
+                        Foundations. </p>
+
+                    <h4>Skills Developed:</h4>
+                    <ul class="skills-developed-list">
+                        <li>Networking Architecture & Protocols</li>
+                        <li>Business of IT</li>
+                        <li>AWS Cloud Networking</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div>
+                <h3><strong>Linic Freight</strong><span class="experience-type"> - Google Workspace Deployment Admin -
+                        Internship</span></h3>
+                <p><em>Nov 2025 - Jan 2026</em></p>
+                <article class="experience-wrapper">
+                    <p>Led Google Workspace deployment for Linic, implementing security controls through organizational
+                        units (OUs), group permissions, and SPF/DKIM/DMARC configuration. Established secure
+                        communication channels via Chat Spaces and conducted an in-depth investigation into an email
+                        security breach. Produced a detailed report outlining mitigation strategies focused on achieving
+                        complete visibility of workspace activity.</p>
+
+                    <h4>Skills Developed:</h4>
+                    <ul class="skills-developed-list">
+                        <li>Hands on experience with Google Workspace</li>
+                        <li>Strengthened communication skill to help executives make decisions</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div>
+                <h3><strong>Verizon (Smart Link/ Team Wireless)</strong><span class="experience-type"> - Sales
+                        Consultant - Full Time</span></h3>
+                <p><em>Jan 2020 - June 2020/Aug 2022 - May 2023</em></p>
+                <article class="experience-wrapper">
+                    <p>Applied critical thinking to be able to fit clients with the right devices for their situations.
+                        Also, worked closely on the technical side setting up phones, connecting them to the network,
+                        and troubleshooting any issues that may arise with clients phones.</p>
+
+                    <h4>Skills Developed:</h4>
+                    <ul class="skills-developed-list">
+                        <li>Troubleshooting</li>
+                        <li>Trained on data privacy</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Education Section -->
+        <section id="education" class="section-wrapper">
+            <h2>Education</h2>
+            <div>
+                <h3>College</h3>
+                <ul>
+                    <li class="education-item">
+                        <h4>WGU - Bachelor of Science, Cloud and Network Engineering - Amazon Web Services</h4>
+                        <p><em>Current Term: 3 of 10</em></p>
+                        <a href="#WGU-program" class="relative-link" title="link to program details">Click here to see
+                            program details</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="certifications-list">
+                <h3>Certifications</h3>
+                <ul>
+                    <li class="education-item">
+                        <h4>ITIL 4 Foundation Certificate in IT Service Management</h4>
+                        <p><em>Issued Feb 2026 · Expires Feb 2029</em></p>
+                        <details>
+                            <summary>Certification Details</summary>
+                            <p>Covers a high-level view of IT service management (ITSM) in the context of current
+                                business practices. More specifically, the 4 dimensions of service management; the parts
+                                that make up the service value system: 7 guiding principles, governance, service value
+                                chain (SVC), practices, and continual improvement; and how this all comes together to
+                                optimize delivering IT services alongside frameworks like Agile.</p>
+                        </details>
+
+                    </li>
+                    <li class="education-item">
+                        <h4>Splunk: A SIEM Tool Bootcamp</h4>
+                        <p><em>Issued Nov 2025</em></p>
+                        <details>
+                            <summary>Certification Details</summary>
+                            <p>Covers usage of Splunk as a security information event managment (SIEM) solution.
+                                Specifically in the context of what is a SIEM, why use a SIEM, how to set up Splunk
+                                using AWS and deploy agents to monitor VMs, and how to query Splunk using Splunk's query
+                                language: search processing language (SPL).</p>
+                        </details>
+                    </li>
+                    <li class="education-item">
+                        <h4>LP1 Linux Essentials Certificate</h4>
+                        <p><em>Issued Sep 2025</em></p>
+                        <details>
+                            <summary>Certification Details</summary>
+                            <p>Covers fundamental Linux and open-source concepts, including understanding that Linux is
+                                a kernel and that distributions like Debian and Red Hat build upon it; navigating the
+                                file system hierarchy and understanding that everything in Linux is treated as a file;
+                                managing software with package managers like apt, dpkg, and rpm; essential command-line
+                                skills for file operations, searching, and basic scripting; and foundational security
+                                concepts like users, groups, and file permissions.</p>
+                        </details>
+                    </li>
+                    <li class="education-item">
+                        <h4>CompTIA A+ ce Certification</h4>
+                        <p><em>Issued Jun 2025 · Expires Jun 2028</em></p>
+                        <details>
+                            <summary>Certification Details</summary>
+                            <p>Covers hardware and software fundamentals across two exams. Core 1 focuses on
+                                identifying, installing, and troubleshooting hardware components like CPUs,
+                                motherboards, RAM, power supplies, and storage devices, as well as networking concepts,
+                                mobile devices, and virtualization/cloud computing. Core 2 covers operating system
+                                installation and management across Windows, macOS, and Linux; security fundamentals
+                                including malware prevention and access controls; software troubleshooting using tools
+                                like Task Manager and command-line utilities; and operational best practices for
+                                documentation and customer support.</p>
+                        </details>
+                    </li>
+                    <li class="education-item">
+                        <h4>Scientific Computing with Python</h4>
+                        <p><em>Issued Jun 2024</em></p>
+                        <details>
+                            <summary>Certification Details</summary>
+                            <p>Covers Python programming fundamentals and their application to scientific computing. Key
+                                topics include core data types (integers, strings, lists, dictionaries, and tuples);
+                                control structures, functions, and object-oriented programming (OOP); algorithms and
+                                data structures such as sorting and tree traversal; and string manipulation with regular
+                                expressions. Completed five applied projects including an Arithmetic Formatter, Budget
+                                App, and Probability Calculator.</p>
+                        </details>
+                    </li>
+                    <li class="education-item">
+                        <h4>Google Cybersecurity</h4>
+                        <p><em>Issued Mar 2024</em></p>
+                        <details>
+                            <summary>Certification Details</summary>
+                            <p>Covers foundational cybersecurity concepts across eight courses. Topics include the CIA
+                                triad and NIST framework; identifying and managing security risks using security
+                                frameworks and playbooks; network security concepts including TCP/IP, VPNs, and
+                                defending against attacks like DDoS; Linux command-line and SQL for cybersecurity tasks;
+                                understanding assets, threats, and vulnerabilities; incident detection and response
+                                using SIEM tools like Splunk and Chronicle; and automating cybersecurity workflows with
+                                Python.</p>
+                        </details>
+                    </li>
+                    <li class="education-item">
+                        <h4>Responsive Web Design</h4>
+                        <p><em>Issued Feb 2024</em></p>
+                        <details>
+                            <summary>Certification Details</summary>
+                            <p>Covers the fundamentals of building responsive websites with HTML and CSS. Key topics
+                                include semantic HTML for content structure and accessibility; CSS styling with Flexbox
+                                and Grid for responsive layouts; CSS variables, animations, and transforms for dynamic
+                                visuals; and form design for user interaction. Completed five projects including a
+                                Tribute Page, Survey Form, Product Landing Page, Technical Documentation Page, and
+                                Personal Portfolio.</p>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <span class="footer-comment">// end_of_file</span>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-name">Xavier Bodus</p>
+                <p>Cloud &amp; Security Engineer</p>
+                <p>WGU — B.S. Cloud Computing</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="cover-letter.html">Cover Letter</a>
+                <a href="career-goals.html">Career Goals</a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Xavier Bodus. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

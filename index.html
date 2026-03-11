@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script type="importmap">
+        {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+        }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <title>Xavier Bodus - Portfolio</title>
+</head>
+
+<body>
+    <!-- Desktop Bar Navigation -->
+    <aside id="navigation" class="desktop-nav">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <div class="logo"></div>
+            </a>
+            <ul class="links-wrapper">
+                <li><a href="index.html" class="desktop-link active">Home</a></li>
+                <li><a href="resume.html" class="desktop-link">Resume</a></li>
+                <li><a href="cover-letter.html" class="desktop-link">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="desktop-link">Career Goals</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Mobile Nav -->
+    <nav id="mobile-navigation" class="mobile-nav">
+        <div class="nav-bar">
+            <a href="index.html" class="logo-link">
+                <div class="logo"></div>
+            </a>
+            <div id="mobile-navigation-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-drawer">
+            <ul class="mobile-links-wrapper">
+                <li class="active"><a href="index.html" class="mobile-link active">Home</a></li>
+                <li><a href="resume.html" class="mobile-link">Resume</a></li>
+                <li><a href="cover-letter.html" class="mobile-link">Cover Letter</a></li>
+                <li><a href="career-goals.html" class="mobile-link">Career Goals</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-grid"></div>
+            <!-- Desktop Title -->
+            <h1 class="desktop-site-title">
+                <div class="hero-top">
+                    <span class="hero-subtext">Student - Coder - Experimentalist</span>
+                    <span class="hero-title letter-stroke">PORT</span>
+                </div>
+                <div class="hero-bottom">
+                    <span class="hero-title letter-stroke">FOLIO</span>
+                    <span class="hero-subtext">Xavier Bodus</span>
+                </div>
+            </h1>
+
+            <!-- Mobile Title -->
+            <h1 class="mobile-site-title">
+                <div>
+                    <span class="hero-subtext">Student - Coder - Experimentalist</span>
+                    <span class="hero-subtext">Xavier Bodus</span>
+                </div>
+                <div class="hero-title letter-stroke">PORT</div>
+                <div class="hero-title letter-stroke">FOL</div>
+                <div class="hero-title letter-stroke">IO</div>
+            </h1>
+            <div class="fade-overlay"></div>
+        </section>
+
+        <!-- Who am I? -->
+        <section id="bio" class="animate-on-scroll">
+            <div class="accent-pattern"></div>
+            <div class="bio-wrapper">
+                <div class="bio-title">
+                    <span class="bio-icon">
+                        <svg width="65" height="60" viewBox="45 40 350 350" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M262.151,213.595c7.839,3.666 15.06,8.693 21.297,14.93c14.089,14.089 22.005,33.199 22.005,53.124l0,10.641c-0,9.096 -7.374,16.47 -16.47,16.47l-134.58,0c-9.096,-0 -16.47,-7.374 -16.47,-16.47l-0,-10.641c0,-19.925 7.915,-39.035 22.005,-53.124c6.237,-6.237 13.457,-11.264 21.297,-14.93c9.637,11.631 24.189,19.045 40.459,19.045c16.27,0 30.822,-7.414 40.459,-19.045Z"
+                                fill="currentColor" />
+                            <circle cx="221.693" cy="180.12" r="47.52" fill="currentColor" />
+                        </svg>
+                    </span>
+                    <h2>Who am i?</h2>
+                </div>
+                <p>
+                    Smart? Yes. Good Looking? Of course. Funny? Come on...well, maybe not that last one...or, you know,
+                    any of them...*crickets*
+                </p>
+                <p>
+                    Okay, in all seriousness, I am a student with a near unsatiable appetite to learn and create. I'm
+                    passionate about coding and cybersecurity, and my goal is to work in application security.
+                </p>
+            </div>
+        </section>
+
+        <!-- "Remember The Name" -->
+        <section id="achievements" class="animate-on-scroll">
+            <div class="achievements-wrapper">
+                <span class="achievement-card">
+                    <div>
+                        <span class="enlarge">10%</span>
+                        Luck
+                    </div>
+                    <p class="achievement-subtext">(100s training hours)</p>
+                </span> <!-- 10% Luck (100s of completed projects) -->
+                <span class="achievement-card">
+                    <div>
+                        <span class="enlarge">20%</span>
+                        Skill
+                    </div>
+                    <p class="achievement-subtext">(7+ certifications)</p>
+                </span> <!-- 20% Skill (7+ certifications) -->
+                <span class="achievement-card">
+                    <div>
+                        <span class="enlarge">15%</span>
+                        C.P.O.W.
+                    </div>
+                    <p class="achievement-subtext">(You know the rest)</p>
+                </span> <!-- 15% Concentrated power of will (You know the rest)-->
+            </div>
+            <div class="accent-pattern reverse"></div>
+        </section>
+
+        <!-- Skills -->
+        <!-- Star Rating System -->
+        <section id="skills">
+            <div class="skills-wrapper">
+                <h2 class="skills-title">Skills</h2>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <p class="skill-label">Python</p>
+                        <span>
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                        </span>
+                    </li>
+                    <li class="skill-item">
+                        <p class="skill-label">Linux</p>
+                        <span>
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                        </span>
+                    </li>
+                    <li class="skill-item">
+                        <p class="skill-label">Communication</p>
+                        <span>
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                        </span>
+
+                    </li>
+                    <li class="skill-item">
+                        <p class="skill-label">Tenacity</p>
+                        <span>
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                            <img class="star filled" src="static/filled-star.png" alt="filled-star" />
+                        </span>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="socials">
+            <div class="socials-arrow">
+                <h2 class="socials-title">Connect on socials</h2>
+            </div>
+            <div class="socials-links">
+                <a href="https://www.linkedin.com/in/xavier-bodus-a20ab1202" target="_blank"><img
+                        class="socials-icon purple" src="static/linkedin.png" alt="Linkedin Icon"></a>
+                <a href="https://app.joinhandshake.com/profiles/afg52k" target="_blank"><img class="socials-icon"
+                        src="static/Handshake_avatar_square.png" alt="Handshake Icon"></a>
+                <a href="https://www.xdesignsagency.com/" target="_blank"><img class="socials-icon"
+                        src="static/XDesignsV2.svg" alt="X Designs Agency Icon"></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <span class="footer-comment">// end_of_file</span>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-name">Xavier Bodus</p>
+                <p>Cloud &amp; Security Engineer</p>
+                <p>WGU — B.S. Cloud Computing</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="cover-letter.html">Cover Letter</a>
+                <a href="career-goals.html">Career Goals</a>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2026 Xavier Bodus. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
+
+
+<!-- ASSET CREDITS -->
+<!-- 3d Mechanical Keyboard: Credit to unknown.fbx on Sketchfab-->
+<!-- <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/custom-mechanical-keyboard-90d61eec0c484332ab562c5f4eda6f52?utm_medium=embed&utm_campaign=share-popup&utm_content=90d61eec0c484332ab562c5f4eda6f52" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Custom - Mechanical Keyboard </a> by <a href="https://sketchfab.com/unknown.fbx?utm_medium=embed&utm_campaign=share-popup&utm_content=90d61eec0c484332ab562c5f4eda6f52" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> unknown.fbx </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=90d61eec0c484332ab562c5f4eda6f52" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p> -->
+
+<!-- Star Icon: Credit to Pixel Perfect on Flaticon -->
+<!-- <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a> -->
+
+<!-- Star Icon 2: Credit to Freepik on Flaticon-->
+<!-- <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Freepik - Flaticon</a> -->
+
+<!-- Linkedin Icon: Credit to riajulislam on Flaticon-->
+<!-- <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a> -->
